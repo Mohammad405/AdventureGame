@@ -22,3 +22,26 @@ def intro(item, option):
     print_pause("In your hand you hold your trusty (but not very "
                 "effective) dagger.\n")
 
+
+def cave(item, option):
+    '''Take two prams {item} and {option}
+       print out your options and item in the Cave.
+    '''
+    
+    if "sward" in item:
+        print_pause("\nYou peer cautiously into the cave.")
+        print_pause("\nYou've been here before, and gotten all"
+                    " the good stuff. It's just an empty cave"
+                    " now.")
+        print_pause("\nYou walk back to the field.\n")
+    else:
+        print_pause("\nYou peer cautiously into the cave.")
+        print_pause("\nIt turns out to be only a very small cave.")
+        print_pause("\nYour eye catches a glint of metal behind a "
+                    "rock.")
+        print_pause("\nYou have found the magical Sword of Ogoroth!")
+        print_pause("\nYou discard your silly old dagger and take "
+                    "the sword with you.")
+        print_pause("\nYou walk back out to the field.\n")
+        item.append("sward")
+    field(item, option)
