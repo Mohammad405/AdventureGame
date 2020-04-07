@@ -88,3 +88,21 @@ def house(item, option):
             field(item, option)
             break
     
+
+
+def field(item, option):
+    '''
+       Display your option for field
+    '''
+    
+    print_pause("Enter 1 to knock on the door of the house.")
+    print_pause("Enter 2 to peer into the cave.")
+    print_pause("What would you like to do?")
+    while True:
+        choice1 = input("(Please enter 1 or 2.)\n")
+        if choice1 == "1":
+            house(item, option)
+            break
+        elif choice1 == "2":
+            cave(item, option)
+            break
