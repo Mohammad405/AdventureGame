@@ -106,3 +106,21 @@ def field(item, option):
         elif choice1 == "2":
             cave(item, option)
             break
+
+
+
+def play_again():
+    '''
+       Take your respond to play more or exit
+    '''
+    
+    again = input("Would you like to play again? (y/n)").lower()
+    if again == "y":
+        print_pause("\n\n\nExcellent! Restarting the game ...\n\n\n")
+        play_game()
+    elif again == "n":
+        print_pause("\n\n\nThanks for playing! See you next time.\n\n\n")
+    else:
+        play_again()
+
+     
