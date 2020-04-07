@@ -123,4 +123,11 @@ def play_again():
     else:
         play_again()
 
+
      
+def play_game():
+    item = []
+    option = random.choice(["wicked fairie", "pirate", "dragon", "troll",
+                            "gorgon"])
+    intro(item, option)
+    field(item, option)
