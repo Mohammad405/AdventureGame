@@ -131,3 +131,5 @@ def play_game():
                             "gorgon"])
     intro(item, option)
     field(item, option)
+
+play_game()
